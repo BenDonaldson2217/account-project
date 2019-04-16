@@ -6,7 +6,7 @@ import java.util.Map;
 public class Service {
 	int accountCount=0;
 	
-	Map<Integer, Account> accountList = new HashMap<Integer, Account>();
+	private Map<Integer, Account> accountList = new HashMap<Integer, Account>();
 	
 	public void addAccount(String firstName, String lastName, String accountNumber) {
 		Account account = new Account(firstName, lastName, accountNumber);
