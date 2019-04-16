@@ -7,10 +7,10 @@ import org.junit.Test;
 
 public class Cycle {
 	
-	Service service = new Service();
+	static Service service = new Service();
 	
 	@BeforeClass
-	public void setup() {
+	public static void setup() {
 		service.addAccount("Ben", "Donaldson", "1");
 		service.addAccount("Be", "Donaldson", "2");
 		service.addAccount("B", "Donaldson", "3");
@@ -24,6 +24,7 @@ public class Cycle {
 		assertEquals(0, service.count(""));
 	}
 	
+	@Test
 	public void Test2() {
 		assertEquals(1,service.count("B"));
 	}
