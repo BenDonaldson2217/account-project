@@ -6,6 +6,7 @@ public class AMS {
 		Service service = new Service();
 		service.addAccount("Ben", "Donaldson", "1");
 		System.out.println(service.getAccount(1).getLastName());
+		System.out.println(service.getAllAccounts().keySet());
 	}
 
 }

@@ -24,8 +24,15 @@ public class Service {
 	}
 
 	public int count(String firstName) {
-		
-		return 0;
+		int count = 0;
+		for (int i: accountList.keySet()) {
+			
+			if (accountList.get(i).getFirstName().equals(firstName)) {
+				count++;
+				
+			}
+		}
+		return count;
 	}
 
 	
