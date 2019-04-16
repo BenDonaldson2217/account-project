@@ -19,6 +19,10 @@ public class Service {
 		
 	}
 	
+	public Map<Integer, Account> getAllAccounts(){
+		return accountList;
+	}
+	
 	
 	
 
