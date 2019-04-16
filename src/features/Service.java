@@ -23,6 +23,11 @@ public class Service {
 		return accountList;
 	}
 
+	public int count(String firstName) {
+		
+		return 0;
+	}
+
 	
 	
 	
